@@ -43,7 +43,7 @@ while True:
     # Validamos opciones permitidas (¡Ajustada para que no falle con el 6!)
     opciones_validas = ["1", "2", "3", "4", "6"] # <-- AGREGA EL "6" AQUÍ EN TU RETO
     if opcion not in opciones_validas:
-        print("❌ Opción inválida. Elige una opción del menú.")
+        print(" Opción inválida. Elige una opción del menú.")
         continue
 
     # ARMA 3: try/except - mata el ValueError que ocurre si el usuario mete algo que no es numero
@@ -66,6 +66,7 @@ while True:
         print(f"\nresultado: {num1} elevado a {num2} = {num1 ** num2}")
 
         input("\nPresiona Enter para volver al menu...")
+
 
 
     
