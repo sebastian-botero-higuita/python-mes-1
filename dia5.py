@@ -27,8 +27,7 @@ print("=== CALCULADORA V4: DISPATCH TABLE + DICTS ===")
 
 while True:
     print("\n1.Sumar | 2.Restar | 3.Multiplicar | 4.Dividir | 5.Potencia | 6.Show History | 7.Salir")
-    op = input("Elige una opción (1-7): ") # <-- ESTA LÍNEA FALTABA
-
+    op = input("Elige una opción (1-7): ") 
     if op == "7":
         print("Chao Sebas. Día 5 completado. ")
         break
