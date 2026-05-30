@@ -58,3 +58,15 @@ Sistema: Registro exitoso para Sebas [Backend Jr]
 
 *Meta: Ofertas laborales antes del 25 de Noviembre de 2026.*
 
+###  Día 7: Decoradores (`@`) - Closures y Envolturas Estructurales
+**Archivo:** `dia7.py`  
+**Fecha:** 30 Mayo 2026
+
+**Qué aprendí hoy:**
+* **Decoradores = Azúcar Sintáctica:** Entendí que la sintaxis `@decorador` es una reasignación automática equivalente a escribir `mi_funcion = decorador(mi_funcion)`.
+* **Patrón Wrapper:** Creación de una función interna que intercepta el flujo para ejecutar código antes y después de la función principal sin modificar su código original.
+* **Preservación de Metadatos:** Uso de `@wraps(func)` de la librería nativa `functools` para evitar que la función pierda su nombre (`__name__`) y su documentación original dentro del sistema.
+* **Control de Acceso Básico:** Intercepción estructural de payloads dinámicos (`**kwargs`) para validar roles y credenciales antes de permitir la ejecución de procesos críticos en el backend.
+* **Regla de Oro Backend:** Todo decorador debe almacenar el retorno con `resultado = func()` y devolverlo con `return resultado`, de lo contrario romperás el flujo de datos del servidor.
+* **Bug Clásico de Junior:** Comprender la diferencia crítica entre `return wrapper()` (que ejecuta la función antes de tiempo) y `return wrapper` (que devuelve la función envuelta lista para ser usada después).
+
