@@ -1,12 +1,12 @@
-print("=== Calculadora Dia 2/180 ===")
+print("=== Calculadora Dia 2/180 ===") 
 
 num1 = float(input("Ingresa el primer numero:"))
 num2 = float(input("ingresa el segundo numero:"))
 operaciones = input("elige +, -, *, / :")
 
-if operaciones == "+":
+if operaciones == "+": # 
     resultado = num1 + num2
-    print(f"Resultado: {num1} + {num2} = {resultado}")
+    print(f"Resultado: {num1} + {num2} = {resultado}") 
 elif operaciones == "-":
     resultado = num1 - num2
     print(f"Resultado: {num1} - {num2} = {resultado}")

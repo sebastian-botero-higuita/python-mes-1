@@ -1,6 +1,6 @@
 ## # calculadora_v2.py - Día 3/180 | Hecho por: Sebas futuro Jr Mid ##
 
-def sumar(a, b):
+def sumar(a, b):  
     return a + b
 
 def restar(a, b):
@@ -31,7 +31,7 @@ print("==================================")
 
 # AQUI EMPIEZA LA MAGIA: BUCLE INFINITO CONTROLADO #
 
-while True:
+while True: 
     mostrar_menu()
     opcion = input("Elige una opcion 1-6: ")
 
