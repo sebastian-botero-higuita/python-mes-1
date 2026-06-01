@@ -76,6 +76,37 @@ Plan intensivo de 180 días enfocado en buenas prácticas, arquitectura limpia y
 
 ---
 
+## 📈 Progreso Actual: Día 8/180 ✅
+
+
+### ⚡ Día 8: Iteradores y Generadores (`yield`) - Optimización de Memoria
+**Archivo:** `dia8.py`  
+**Fecha:** 31 Mayo 2026
+
+**Qué aprendí hoy:**
+* **Evaluación Perezosa (Lazy Evaluation):** Los generadores no calculan ni almacenan colecciones masivas en memoria. Producen un elemento a la vez bajo demanda, reduciendo el consumo de RAM a una escala constante $O(1)$ (bajé de 8.06 MB a solo 208 bytes).
+* **Mecanismo de Pausa (`yield`):** Entendí que `yield` actúa como un retorno temporal que congela el estado completo de la función (variables locales y puntero de ejecución), permitiendo revivirla en el mismo punto exacto.
+* **Protocolo de Iteración y `StopIteration`:** Aprendí que el consumo manual se ejecuta con la función nativa `next()` y que Python avisa de forma estructural que el flujo se quedó sin datos levantando la excepción `StopIteration`.
+* **Flujos Infinitos Controlados:** Diseñé un generador infinito con un ciclo `while True` continuo, comprendiendo cómo consumir datos ilimitados de forma segura mediante peticiones dosificadas sin bloquear los núcleos de la CPU.
+
+**Output verificado en consola:**
+```text
+📦 Lista completa : 8.06 MB
+=== PRUEBA stopIteration ===
+Elemento 1: 0
+Elemento 2: 1
+StopIteration atrapada: El generador se quedo sin datos
+
+=== PRUEBA INFINITO CONTROLADO ===
+1
+3
+5
+7
+... y paramos antes de que la mac llore
+Generador: 208 bytes. Misma info, RAM constante 0(1)
+
+---
+
 ## 📈 Progreso Actual: Día 7/180 ✅
 
 ### 🛠️ Día 7: Decoradores (`@`) - Closures y Envolturas Estructurales
