@@ -76,6 +76,23 @@ Plan intensivo de 180 días enfocado en buenas prácticas, arquitectura limpia y
 
 ---
 
+### 🛡️ Día 9: Arquitectura Defensiva (`try/except/else/finally`) y Sistemas de Logging
+**Archivo:** `dia9.py` | **Logs:** `log.txt`  
+**Fecha:** 1 Junio 2026
+
+**Qué aprendí hoy:**
+* **Flujo Defensivo Completo:** Implementé la estructura de control de excepciones de Python. Utilicé `else` para ejecutar operaciones lógicas de éxito exclusivo y `finally` como bloque de cierre mandatorio para flujos de auditoría del sistema.
+* **Excepciones de Dominio Personalizadas:** Creé clases de error específicas heredando de `Exception` para interceptar de forma aislada las violaciones lógicas de las reglas de negocio (como las alertas de rachas insuficientes) sin mezclar fallos sintácticos de entrada de datos.
+* **Persistencia de Eventos de Servidor (Logging):** Diseñé un motor básico de logging persistente en disco utilizando el modo de apertura `"a"` (append) y codificación `utf-8`, asignando niveles semánticos de criticidad (`INFO`, `WARNING`, `DEBUG`) a cada acción del flujo.
+
+**Formato de auditoría registrado en el sistema:**
+```text
+[2026-06-01 17:30:44] [INFO] Iniciando validacion
+[2026-06-01 17:30:52] [WARNING] racha 5 insuficiente
+[2026-06-01 17:30:52] [DEBUG] proceso terminado
+
+---
+```
 ## 📈 Progreso Actual: Día 8/180 ✅
 
 
