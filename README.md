@@ -105,6 +105,7 @@ StopIteration atrapada: El generador se quedo sin datos
 ... y paramos antes de que la mac llore
 Generador: 208 bytes. Misma info, RAM constante 0(1)
 
+```
 ---
 
 ## 📈 Progreso Actual: Día 7/180 ✅
@@ -121,9 +122,9 @@ Generador: 208 bytes. Misma info, RAM constante 0(1)
 * **Regla de Oro Backend:** Todo decorador debe almacenar el retorno con `resultado = func()` y devolverlo con `return resultado`, de lo contrario romperás el flujo de datos del servidor.
 * **Bug Clásico de Junior:** Comprender la diferencia crítica entre `return wrapper()` (que ejecuta la función antes de tiempo) y `return wrapper` (que devuelve la función envuelta lista para ser usada después).
 
+---
 
-
-## 📈 Progreso Actual: Día 6/180 ✅
+### 📈 Progreso Actual: Día 6/180 ✅
 
 ### 🛠️ Día 6: Operadores *args y \*\*kwargs`
 **Archivo:** `dia6.py`
