@@ -1,4 +1,1 @@
-
-2026-06-01 17:30:44 INFO Iniciando validacion
-2026-06-01 17:30:52 WARNING racha 5 insuficiente
-2026-06-01 17:30:52 DEBUG proceso terminado
+Sebastian Botero - 2026-06-02

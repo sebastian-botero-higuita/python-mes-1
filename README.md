@@ -76,6 +76,18 @@ Plan intensivo de 180 días enfocado en buenas prácticas, arquitectura limpia y
 
 ---
 
+### 📂 Día 10: Administradores de Contexto (`with open`) y Lectura Defensiva
+**Archivo:** `dia10.py` | **Logs:** `log.txt`  
+**Fecha:** 2 Junio 2026
+
+**Qué aprendí hoy:**
+* **Context Managers (`with`):** Implementé el uso de administradores de contexto para la gestión limpia de archivos. Aprendí que esta estructura maneja el ciclo de vida del recurso de forma automática, ejecutando un cierre seguro en el sistema operativo sin necesidad de invocar `.close()` manualmente.
+* **Aislamiento de Excepciones del Sistema (`FileNotFoundError`):** Blindé el flujo de lectura contra fallos de archivos inexistentes en el disco, aislando errores críticos de Entrada/Salida (I/O) mediante bloques de captura específicos para mantener la continuidad del programa.
+* **Persistencia Automatizada:** Desarrollé un reto práctico escribiendo y auditando datos dinámicos en un archivo de registros locales (`log.txt`).
+
+
+---
+
 ### 🛡️ Día 9: Arquitectura Defensiva (`try/except/else/finally`) y Sistemas de Logging
 **Archivo:** `dia9.py` | **Logs:** `log.txt`  
 **Fecha:** 1 Junio 2026
