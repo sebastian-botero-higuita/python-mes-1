@@ -74,6 +74,13 @@ Plan intensivo de 180 días enfocado en buenas prácticas, arquitectura limpia y
 * **Código Limpio:** Formateo y orden estructural antes de cada push.
 * **Producción:** Pregúntate siempre "¿Esto aguantaría 10k usuarios concurrentes?".
 
+### Día 12: Diccionarios - Gestor de Tareas PRO
+- **Aprendí**: Diccionarios `{"clave": "valor"}`, leer y modificar datos
+- **Hice**: Gestor de Tareas que guarda texto + estado + prioridad
+- **Archivo**: `tareas.py` - Menú completo con agregar, ver y completar
+- **Mentalidad**: Código limpio > código rápido. Comenté todo con #
+
+
 ---
 
 ### 📊 Día 11: Estructuras de Datos - Listas y Métodos de Manipulación Dinámica
