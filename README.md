@@ -76,6 +76,18 @@ Plan intensivo de 180 días enfocado en buenas prácticas, arquitectura limpia y
 
 ---
 
+### 📊 Día 11: Estructuras de Datos - Listas y Métodos de Manipulación Dinámica
+**Archivo:** `dia11.py`  
+**Fecha:** 3 Junio 2026
+
+**Qué aprendí hoy:**
+* **Colecciones Mutables (Listas):** Comprendí el concepto de arreglos dinámicos y ordenados en Python, usando la sintaxis de corchetes `[]` e indexación basada en cero.
+* **Manipulación de Elementos en Memoria:** Implementé métodos fundamentales de inserción (`append()`, `insert()`) y eliminación de datos por valor (`remove()`) o por índice de posición (`pop()`).
+* **Lógica de Control de Menús Continuos:** Diseñé un Gestor de Tareas funcional en consola utilizando un bucle `while True` acoplado con la instrucción de ruptura `break`, emulando el comportamiento de flujos interactivos de nivel industrial.
+
+
+---
+
 ### 📂 Día 10: Administradores de Contexto (`with open`) y Lectura Defensiva
 **Archivo:** `dia10.py` | **Logs:** `log.txt`  
 **Fecha:** 2 Junio 2026
