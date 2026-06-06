@@ -1,0 +1,17 @@
+[
+    {
+        "texto": "Entender JSON",
+        "completada": true,
+        "prioridad": "Alta"
+    },
+    {
+        "texto": "Dominar Persistencia",
+        "completada": false,
+        "prioridad": "Media"
+    },
+    {
+        "texto": "Aprendi JSON y venci IndentationError",
+        "completada": false,
+        "prioridad": "Alta"
+    }
+]

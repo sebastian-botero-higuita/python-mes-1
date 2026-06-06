@@ -74,6 +74,23 @@ Plan intensivo de 180 días enfocado en buenas prácticas, arquitectura limpia y
 * **Código Limpio:** Formateo y orden estructural antes de cada push.
 * **Producción:** Pregúntate siempre "¿Esto aguantaría 10k usuarios concurrentes?".
 
+---
+
+### 💾 Día 13: Persistencia de Datos con Almacenamiento Estructurado (JSON)
+**Archivo:** `tareas.py` y `tareas.json`  
+**Fecha:** 5 Junio 2026
+
+**Evolución del Sistema:**
+* **Persistencia Robusta:** Reemplacé el almacenamiento volátil en memoria RAM por persistencia permanente en el disco duro, utilizando el formato estándar de la industria **JSON** (`JavaScript Object Notation`).
+* **Seguridad contra Inyección de Datos:** Al implementar la librería nativa `json`, el sistema quedó blindado contra errores de análisis (parsing) que ocurren comúnmente al usar archivos de texto plano (`.txt`) con separadores manuales.
+* **Ciclo de Vida de Datos (I/O):** Diseñé una arquitectura de carga inicial preventiva (`json.load`) al arrancar el script, y un guardado inmediato y automatizado (`json.dump`) tras cada mutación del estado en los diccionarios.
+* **Soporte de Caracteres Universal:** Forcé el uso de `encoding="utf-8"` en el manejo de archivos, garantizando la portabilidad del backend y el soporte correcto para tildes y caracteres especiales en español.
+
+**Bugs vencidos:** Typo `loand`, IndentationError, NameError `Completada`  
+**Prueba de fuego:** Tareas sobreviven al cerrar y abrir terminal ✅
+
+---
+
 ### Día 12: Diccionarios - Gestor de Tareas PRO
 - **Aprendí**: Diccionarios `{"clave": "valor"}`, leer y modificar datos
 - **Hice**: Gestor de Tareas que guarda texto + estado + prioridad
