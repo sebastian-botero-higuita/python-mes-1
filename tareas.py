@@ -4,6 +4,7 @@
 #=============
 
 import json # <- Libreria estanda para guardar diccionarios 
+import os 
 
 #1 FUNCION PARA GUARDAR
 def guardar_tareas():
@@ -13,20 +14,50 @@ def guardar_tareas():
     except Exception as e:
         print(f"Error critico al gurdar los datos: {e}")
 
+def cargar_tareas():
+    global tareas
+    if os.path.exists('tareas.json'):
+        with open('tareas.json', 'r', encoding='utf-8') as f:
+            tareas = json.load(f)
+            print(f"[sistema] cargadas {len(tareas)} tareas desde el archivo tareas.json")
+
+
 # 2. FUNCION PARA CARGAR
 
-def cargar_tareas():
-    try:
-        with open("tareas.json", "r", encoding="utf-8") as archivo:
-            datos = json.load(archivo)
-            tareas.clear()
-            tareas.extend(datos)
-    except FileNotFoundError:
-        pass # Primera vez, no existe archivo. Normal.
-    except json.JSONDecodeError:
-        print("Archivo corrupto. Iniciando vacio.")
+def editar_tarea():
+    if len(tareas) == 0:
+        print("No tienes tareas todavía para editar.")
+        return
 
-# 2. FLUJO PRINCIPAL
+    try:
+        indice = int(input("Número de tarea a editar: ")) - 1
+        if 0 <= indice < len(tareas):
+            nuevo_texto = input(f"Nuevo texto para '{tareas[indice]['texto']}': ")
+            tareas[indice]['texto'] = nuevo_texto
+            guardar_tareas() # Sincroniza con tu tareas.json inmediato
+            print(" Tarea editada con éxito")
+        else:
+            print(" Número inválido. Esa tarea no existe.")
+    except ValueError:
+        print(" Error: Escribe solo números enteros.")
+
+def eliminar_tarea():
+    if len(tareas) == 0:
+        print(" No tienes tareas todavía para eliminar.")
+        return
+    
+    try:
+        indice = int(input("Número de tarea a eliminar: ")) - 1
+        if 0 <= indice < len(tareas):
+            tarea_borrada = tareas.pop(indice)
+            guardar_tareas() # Sincroniza la eliminación en tu tareas.json
+            print(f" Eliminada con éxito: '{tarea_borrada['texto']}'")
+        else:
+            print(" Número inválido. Esa tarea no existe.")
+    except ValueError:
+        print(" Error: Escribe solo números enteros.")
+
+# 3. FLUJO PRINCIPAL
         
 tareas = []
 cargar_tareas()  #<- Carga lo guardado ayer
@@ -36,7 +67,9 @@ while True:
             print("1. Agregar tarea")
             print("2. Ver tareas")
             print("3. Marcar completada")
-            print("4. Salir")
+            print("4. Editar tarea")
+            print("5. Eliminar tarea")
+            print("6. Salir")
             
             opcion = input("Elige: ")
 
@@ -72,6 +105,13 @@ while True:
                         print(" Por favor, ingrese un numero valido.")
 
             elif opcion == "4":
+                editar_tarea()
+
+            elif opcion == "5":
+                eliminar_tarea()
+
+            elif opcion == "6":
+                    guardar_tareas()
                     print("chao Sebas, Datos blindados en tareas json. Seguimos despues dia 14.")
                     break
 

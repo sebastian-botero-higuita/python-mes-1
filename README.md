@@ -76,6 +76,31 @@ Plan intensivo de 180 días enfocado en buenas prácticas, arquitectura limpia y
 
 ---
 
+### 📦 Día 15: Persistencia Preventiva (Carga Automática al Arrancar)
+**Archivo:** `tareas.py` y `tareas.json`  
+**Fecha:** 8 Junio 2026
+
+**Evolución del Sistema:**
+* **Ciclo de Vida de los Datos (I/O):** Rompimos la volatilidad de la memoria RAM. El sistema ahora realiza una lectura preventiva automática del archivo `tareas.json` apenas se inicializa el script.
+* **Módulo de Carga Segura:** Integré la librería nativa `os` para verificar la existencia física del archivo (`os.path.exists`) antes de abrir el flujo de lectura, combinándolo con un bloque defensivo contra archivos JSON corruptos (`json.JSONDecodeError`).
+* **Experiencia de Usuario (UX):** Añadí un sistema de feedback dinámico en la consola que le reporta al usuario el número exacto de registros cargados con éxito antes de desplegar el menú principal.
+
+**Prueba de fuego final:** ¡El CRUD es 100% funcional y los datos sobreviven por completo al cierre y apertura de la terminal! 🚀🔥
+
+
+---
+
+### ✏️ Día 14: CRUD Completo - Operaciones Update y Delete
+**Archivo:** `tareas.py`  
+**Fecha:** 6 Junio 2026
+
+**Evolución del Sistema:**
+* **Operación Update:** Diseñé la función `editar_tarea()`, permitiendo la mutación directa de los textos dentro de los diccionarios almacenados en la lista.
+* **Operación Delete:** Implementé `eliminar_tarea()` utilizando el método `list.pop(indice)` para remover la tarea de la memoria y retornar su valor en un mensaje de confirmación.
+* **Manejo Defensivo de Errores:** Bloqueé excepciones del sistema tipo `IndexError` (validando rangos con lógica condicional) y `ValueError` (atrapando entradas de texto no numéricas con bloques `try/except`).
+
+---
+
 ### 💾 Día 13: Persistencia de Datos con Almacenamiento Estructurado (JSON)
 **Archivo:** `tareas.py` y `tareas.json`  
 **Fecha:** 5 Junio 2026

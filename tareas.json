@@ -1,17 +1,12 @@
 [
     {
-        "texto": "Entender JSON",
-        "completada": true,
-        "prioridad": "Alta"
+        "texto": "estudiar",
+        "completada": false,
+        "prioridad": "2"
     },
     {
-        "texto": "Dominar Persistencia",
+        "texto": "lavar platos",
         "completada": false,
-        "prioridad": "Media"
-    },
-    {
-        "texto": "Aprendi JSON y venci IndentationError",
-        "completada": false,
-        "prioridad": "Alta"
+        "prioridad": "2"
     }
 ]
