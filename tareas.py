@@ -7,7 +7,8 @@ import json # <- Libreria estanda para guardar diccionarios
 import os 
 
 #1 FUNCION PARA GUARDAR
-def guardar_tareas():
+def guardar_tareas(tareas):
+    import json
     try:
         with open("tareas.json", "w", encoding="utf-8") as archivo:
          json.dump(tareas, archivo, indent=4, ensure_ascii=False) 
@@ -15,11 +16,21 @@ def guardar_tareas():
         print(f"Error critico al gurdar los datos: {e}")
 
 def cargar_tareas():
-    global tareas
+    import os
+    import json
+
     if os.path.exists('tareas.json'):
+     try:
         with open('tareas.json', 'r', encoding='utf-8') as f:
             tareas = json.load(f)
             print(f"[sistema] cargadas {len(tareas)} tareas desde el archivo tareas.json")
+            return tareas
+     except:
+          print("[sistema] Archivo corrupto, iniciando lista vacia")
+          return[]
+     else:
+         print("[sistema] No hay archivo guardado, iniciando lista vacia")
+         return []
 
 
 # 2. FUNCION PARA CARGAR
@@ -59,29 +70,40 @@ def eliminar_tarea():
 
 # 3. FLUJO PRINCIPAL
         
-tareas = []
-cargar_tareas()  #<- Carga lo guardado ayer
+tareas = cargar_tareas()  #<- Carga lo guardado ayer
+
+def mostrar_menu():
+    print("\n--- MI GESTOR DE TAREAS PRO V2.0 ---")
+    print("1. Agregar tarea")
+    print("2. Ver tareas")
+    print("3. Marcar tarea como completda")
+    print("4. Editar texto de una tarea")
+    print("5. Eliminar una tarea")
+    print("6. Salir ")
+    return input("Elige una opcion: ")
+
+def pedir_datos_tarea():
+    texto = input("Escribe la tarea: ")
+    prioridad = input("Prioridad (Alta/Media/Baja): ")
+    return {
+        "texto": texto,
+        "completada": False,
+        "prioridad": prioridad,
+    }
+
+
+
 
 while True:
-            print("\n--- MI GESTOR DE TAREAS PRO CON MEMORIA ---")
-            print("1. Agregar tarea")
-            print("2. Ver tareas")
-            print("3. Marcar completada")
-            print("4. Editar tarea")
-            print("5. Eliminar tarea")
-            print("6. Salir")
-            
-            opcion = input("Elige: ")
+       opcion = mostrar_menu()
 
-            if opcion == "1":
-                texto = input("Tarea: ")
-                prioridad = input("Prioridad Alta/Media/Baja: ")
-                nueva_tarea = {"texto": texto, "completada": False, "prioridad": prioridad}
+       if opcion == "1":
+                nueva_tarea = pedir_datos_tarea()
                 tareas.append(nueva_tarea)
-                guardar_tareas()  # <- GUARDA YA 
+                guardar_tareas(tareas)  # <- GUARDA YA 
                 print("Guardada en disco ")
 
-            elif opcion == "2":
+       elif opcion == "2":
                 if len(tareas) == 0:
                     print("Sin tareas aun.")
                 else:
@@ -89,7 +111,7 @@ while True:
                         estado=" Hecha" if t["completada"] else "pendiente"
                         print(f"{i+1}. [{estado}] {t['texto']} - {t['prioridad']}")
 
-            elif opcion == "3":
+       elif opcion == "3":
                 if len(tareas) == 0:
                     print("No hay tareas.")
                 else:
@@ -104,18 +126,18 @@ while True:
                     except ValueError:
                         print(" Por favor, ingrese un numero valido.")
 
-            elif opcion == "4":
+       elif opcion == "4":
                 editar_tarea()
 
-            elif opcion == "5":
+       elif opcion == "5":
                 eliminar_tarea()
 
-            elif opcion == "6":
-                    guardar_tareas()
+       elif opcion == "6":
+                    guardar_tareas(tareas)
                     print("chao Sebas, Datos blindados en tareas json. Seguimos despues dia 14.")
                     break
 
-            else:
+       else:
              print("opcion invalida. Intenta de nuevo.")
 
         

@@ -76,6 +76,21 @@ Plan intensivo de 180 días enfocado en buenas prácticas, arquitectura limpia y
 
 ---
 
+### 🧩 Día 16: Refactorización Modular y Responsabilidad Única (SRP)
+**Archivo:** `tareas.py` (y respaldo preventivo en `tareas_backup_dia15.py`)  
+**Fecha:** 9 Junio 2026
+
+**Evolución del Sistema:**
+* **Diseño Modular:** Rompimos el bloque monolítico del ciclo principal para migrar a funciones independientes con una sola responsabilidad.
+* **Módulo de Interfaz (`mostrar_menu()`):** Centraliza la lógica de renderizado del menú de 6 opciones y la captura de la decisión del usuario, aislando la vista del flujo lógico.
+* **Módulo de Estructura (`pedir_datos_tarea()`):** Se encarga exclusivamente de la recolección de datos y el moldeado de diccionarios, garantizando la integridad de las llaves (`texto`, `completada`, `prioridad`) antes de interactuar con la base de datos JSON.
+* **Código Limpio (Clean Code):** Reducción drástica del tamaño del bucle `while True`, transformándolo en un orquestador legible y de nivel empresarial.
+
+**Prueba de fuego:** El sistema se modularizó con éxito, mantiene la persistencia con `tareas.json` y pasó los tests de estrés sin romper datos previos. ✅
+
+
+---
+
 ### 📦 Día 15: Persistencia Preventiva (Carga Automática al Arrancar)
 **Archivo:** `tareas.py` y `tareas.json`  
 **Fecha:** 8 Junio 2026

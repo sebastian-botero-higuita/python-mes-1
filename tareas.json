@@ -1,12 +1,7 @@
 [
     {
-        "texto": "estudiar",
+        "texto": "Probar que si guarda",
         "completada": false,
-        "prioridad": "2"
-    },
-    {
-        "texto": "lavar platos",
-        "completada": false,
-        "prioridad": "2"
+        "prioridad": "1"
     }
 ]
