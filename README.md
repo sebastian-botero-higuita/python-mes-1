@@ -76,6 +76,19 @@ Plan intensivo de 180 días enfocado en buenas prácticas, arquitectura limpia y
 
 ---
 
+## 🧱 Día 17: Extracción de Funciones (Completar Tareas)
+Archivo: tareas.py
+Fecha: 10 Junio 2026
+
+**Evolución del Sistema:**
+- **Refactorización**: Extraída la lógica de "marcar completada" del while a función independiente `completar_tarea()`
+- **Código Limpio**: Reducción del bloque elif de 10 líneas → 1 línea. Principio DRY aplicado
+- **Defensa**: Validación try/except para índice inválido + validación de rango 0 <= indice < len(tareas)
+- **Prueba de fuego**: Sistema ataja errores sin romper el programa. Tareas persisten en tareas.json
+- **Lección clave**: Orden de funciones importa. Python lee de arriba hacia abajo
+
+---
+
 ### 🧩 Día 16: Refactorización Modular y Responsabilidad Única (SRP)
 **Archivo:** `tareas.py` (y respaldo preventivo en `tareas_backup_dia15.py`)  
 **Fecha:** 9 Junio 2026
