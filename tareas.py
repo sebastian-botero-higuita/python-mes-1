@@ -76,7 +76,7 @@ def mostrar_menu():
     print("\n--- MI GESTOR DE TAREAS PRO V2.0 ---")
     print("1. Agregar tarea")
     print("2. Ver tareas")
-    print("3. Marcar tarea como completda")
+    print("3. Marcar tarea como completada")
     print("4. Editar texto de una tarea")
     print("5. Eliminar una tarea")
     print("6. Salir ")
@@ -90,6 +90,37 @@ def pedir_datos_tarea():
         "completada": False,
         "prioridad": prioridad,
     }
+
+def mostrar_tareas():
+     """Muestra todas las tareas guardadas en la lista con su estado"""
+     if not tareas:
+          print("No hay tareas pendientes")
+          return
+     for i, tarea in enumerate(tareas, 1):
+          estado = "X" if tarea["completada"] else "Pendiente"
+          print(f"{i}. [{estado}] {tarea['texto']} - {tarea['prioridad']}")
+
+
+
+def completar_tarea():
+     """Marca una tarea como completada por indice"""
+     mostrar_tareas()
+
+     if not tareas:
+          print("No hay tareas para completar")
+          return
+     
+     try:
+          indice = int(input("Numero de tarea a completar: ")) -1
+          if 0 <= indice < len(tareas):
+               tareas[indice]["completada"] = True
+               guardar_tareas(tareas)
+               print("Tarea marcada como completa")
+
+          else :
+               print("Indice invalido. Usa un numero de la lista")
+     except ValueError:
+          print("Error: Debes ingresar solo numeros")
 
 
 
@@ -112,19 +143,8 @@ while True:
                         print(f"{i+1}. [{estado}] {t['texto']} - {t['prioridad']}")
 
        elif opcion == "3":
-                if len(tareas) == 0:
-                    print("No hay tareas.")
-                else:
-                    try:
-                        indice = int(input("Numero: ")) - 1
-                        if 0 <= indice < len(tareas):
-                            tareas[indice]["completada"] = True
-                            guardar_tareas()   # <- GUARDAMOS EL CAMBIO DE ESTADO INSTANTANEAMENTE
-                            print("Tarea marcada como completada y guardada en disco")
-                        else:
-                            print("Numero de tarea invalido.")
-                    except ValueError:
-                        print(" Por favor, ingrese un numero valido.")
+            completar_tarea()
+     
 
        elif opcion == "4":
                 editar_tarea()
