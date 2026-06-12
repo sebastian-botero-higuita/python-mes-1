@@ -61,7 +61,7 @@ def eliminar_tarea():
         indice = int(input("Número de tarea a eliminar: ")) - 1
         if 0 <= indice < len(tareas):
             tarea_borrada = tareas.pop(indice)
-            guardar_tareas() # Sincroniza la eliminación en tu tareas.json
+            guardar_tareas(tareas) # Sincroniza la eliminación en tu tareas.json
             print(f" Eliminada con éxito: '{tarea_borrada['texto']}'")
         else:
             print(" Número inválido. Esa tarea no existe.")
@@ -121,6 +121,49 @@ def completar_tarea():
                print("Indice invalido. Usa un numero de la lista")
      except ValueError:
           print("Error: Debes ingresar solo numeros")
+
+def eliminar_tareas():
+    """Elimina una tarea por completo de la lista y del disco duro"""
+    mostrar_tareas()
+
+    if not tareas:
+         return # Si no hay tareas, mostar_tareas ya aviso, asi que nos salimos 
+     
+    try:
+         indice = int(input("Numero de tarea a eliminar:")) -1
+
+         if 0 <= indice < len(tareas):
+              print(f"tarea '{tarea_borrada['texto']}' eliminada con exito.")
+         else:
+              print("indice invalido. Usa un numero de lalista.")
+    except ValueError:
+         print("Error: Debes ingresar solo numeros enteros.")
+
+def editar_tarea():
+     """Modifica el texto de una tarea existente sin alterar su estado o prioridad"""
+     mostrar_tareas()
+
+     if not tareas:
+          return
+     
+     try:
+         indice = int(input("Numero de tarea a editar: ")) -1
+         if 0 <= indice < len(tareas):
+              nuevo_texto = input("Escribe el nuevo texto para la tarea: ").strip()
+
+              if nuevo_texto: # Validamos que el usuario no mande un texto vacio
+                   tareas[indice]["texto"] = nuevo_texto
+                   guardar_tareas(tareas) #Guardamos el cambio en el JSON
+                   print("Tarea actualizada con exito.")
+              else:
+                   print("El texto no puede estar vacio. No se modifico nada.")
+         else:
+              print("indice invalido. Usa un numero de la lista.")
+     except ValueError:
+      print("Error: Debes ingresar solo numeros enteros.")
+
+     
+         
 
 
 
