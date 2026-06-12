@@ -76,6 +76,16 @@ Plan intensivo de 180 días enfocado en buenas prácticas, arquitectura limpia y
 
 ---
 
+### 📅 Día 18/180: Cierre del CRUD Modular (Editar y Eliminar)
+- **Tema visto:** Extracción de funciones avanzadas, mutación de diccionarios en listas y persistencia sincrónica.
+- **Lo que aprendí hoy:**
+  - Aprendí a extraer bloques complejos con métodos destructivos como `.pop(indice)` fuera del ciclo principal para mantener una arquitectura limpia (Clean Architecture).
+  - Entendí cómo las funciones modifican ("mutan") diccionarios específicos dentro de una lista global en Python, alterando campos únicos como `["texto"]` sin corromper el resto de la estructura (como prioridad o estado).
+  - Consolidé el control de argumentos al solucionar un `TypeError` recurrente en la función `eliminar_tarea()`, asegurando el paso correcto de la lista de tareas hacia el módulo de persistencia JSON.
+- **Estado del software:** El ciclo `while True` principal quedó totalmente refactorizado y reducido a menos de 15 líneas de código, actuando ahora como un despachador puro de funciones independientes.
+
+---
+
 ## 🧱 Día 17: Extracción de Funciones (Completar Tareas)
 Archivo: tareas.py
 Fecha: 10 Junio 2026
