@@ -76,6 +76,16 @@ Plan intensivo de 180 días enfocado en buenas prácticas, arquitectura limpia y
 
 ---
 
+### 📅 Día 19/180: Filtros Inteligentes y Comprensión de Listas (List Comprehension)
+- **Tema visto:** Filtrado avanzado de datos en memoria, estructuras optimizadas de una sola línea y lectura defensiva de diccionarios.
+- **Lo que aprendí hoy:**
+  - Aprendí a utilizar **List Comprehensions** (`[t for t in tareas if ...]`) para filtrar colecciones de datos de forma compacta y eficiente en una sola línea, evitando la necesidad de bucles tradicionales más extensos.
+  - Implementé el uso defensivo del método `.get()` de los diccionarios (`tarea.get("prioridad", "media")`). Esto garantiza la retrocompatibilidad del software, evitando errores de ejecución (`KeyError`) cuando se procesan registros antiguos que carecen de los nuevos atributos.
+  - Reestructuré el flujo principal para dar soporte a consultas específicas en la terminal (Ver solo pendientes y Ver solo completadas), manteniendo limpio el despachador de opciones (`while True`).
+- **Estado del software:** Versión Pro V2.5 en producción. El sistema ahora permite un control selectivo de la visualización de datos y cuenta con asignación dinámica de prioridades por cada tarea guardada en el disco.
+
+---
+
 ### 📅 Día 18/180: Cierre del CRUD Modular (Editar y Eliminar)
 - **Tema visto:** Extracción de funciones avanzadas, mutación de diccionarios en listas y persistencia sincrónica.
 - **Lo que aprendí hoy:**
