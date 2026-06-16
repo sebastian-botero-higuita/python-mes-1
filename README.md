@@ -76,7 +76,19 @@ Plan intensivo de 180 días enfocado en buenas prácticas, arquitectura limpia y
 
 ---
 
-### 📅 Día 19/180: Filtros Inteligentes y Comprensión de Listas (List Comprehension)
+##  Día 20: CRUD Completo y Control de Errores (Puesto de Empanadas)
+En esta sesión expandí el sistema del puesto de empanadas, completando las operaciones del **CRUD** en memoria RAM y enfrentando desafíos técnicos reales del backend.
+
+### 🚀 Lo que aprendí y apliqué:
+* **Búsqueda Dinámica:** Implementación de filtrado con ciclos `for` y normalización de texto usando `.lower()` y `.strip()` para evitar fallos por mayúsculas.
+* **Mutación Segura de Listas (Delete):** Uso del método `.remove()` combinado con la instrucción `break` para detener el ciclo `for` inmediatamente cuando la lista cambia de tamaño en memoria, evitando errores de índice.
+* **Control y Depuración de Errores Comunes:** * `TypeError`: Identificación de fallos al mezclar tipos de datos (Strings y Diccionarios).
+  * `NameError`: Manejo estricto de variables en singular y plural (`pedido` vs `pedidos`).
+  * `AttributeError`: Entendimiento de qué métodos pertenecen a las listas y cuáles a los diccionarios.
+
+---
+
+###  Día 19/180: Filtros Inteligentes y Comprensión de Listas (List Comprehension)
 - **Tema visto:** Filtrado avanzado de datos en memoria, estructuras optimizadas de una sola línea y lectura defensiva de diccionarios.
 - **Lo que aprendí hoy:**
   - Aprendí a utilizar **List Comprehensions** (`[t for t in tareas if ...]`) para filtrar colecciones de datos de forma compacta y eficiente en una sola línea, evitando la necesidad de bucles tradicionales más extensos.
@@ -86,7 +98,7 @@ Plan intensivo de 180 días enfocado en buenas prácticas, arquitectura limpia y
 
 ---
 
-### 📅 Día 18/180: Cierre del CRUD Modular (Editar y Eliminar)
+### Día 18/180: Cierre del CRUD Modular (Editar y Eliminar)
 - **Tema visto:** Extracción de funciones avanzadas, mutación de diccionarios en listas y persistencia sincrónica.
 - **Lo que aprendí hoy:**
   - Aprendí a extraer bloques complejos con métodos destructivos como `.pop(indice)` fuera del ciclo principal para mantener una arquitectura limpia (Clean Architecture).
@@ -124,7 +136,7 @@ Fecha: 10 Junio 2026
 
 ---
 
-### 📦 Día 15: Persistencia Preventiva (Carga Automática al Arrancar)
+###  Día 15: Persistencia Preventiva (Carga Automática al Arrancar)
 **Archivo:** `tareas.py` y `tareas.json`  
 **Fecha:** 8 Junio 2026
 
@@ -138,7 +150,7 @@ Fecha: 10 Junio 2026
 
 ---
 
-### ✏️ Día 14: CRUD Completo - Operaciones Update y Delete
+###  Día 14: CRUD Completo - Operaciones Update y Delete
 **Archivo:** `tareas.py`  
 **Fecha:** 6 Junio 2026
 
@@ -149,7 +161,7 @@ Fecha: 10 Junio 2026
 
 ---
 
-### 💾 Día 13: Persistencia de Datos con Almacenamiento Estructurado (JSON)
+###  Día 13: Persistencia de Datos con Almacenamiento Estructurado (JSON)
 **Archivo:** `tareas.py` y `tareas.json`  
 **Fecha:** 5 Junio 2026
 
@@ -173,7 +185,7 @@ Fecha: 10 Junio 2026
 
 ---
 
-### 📊 Día 11: Estructuras de Datos - Listas y Métodos de Manipulación Dinámica
+###  Día 11: Estructuras de Datos - Listas y Métodos de Manipulación Dinámica
 **Archivo:** `dia11.py`  
 **Fecha:** 3 Junio 2026
 
@@ -185,7 +197,7 @@ Fecha: 10 Junio 2026
 
 ---
 
-### 📂 Día 10: Administradores de Contexto (`with open`) y Lectura Defensiva
+###  Día 10: Administradores de Contexto (`with open`) y Lectura Defensiva
 **Archivo:** `dia10.py` | **Logs:** `log.txt`  
 **Fecha:** 2 Junio 2026
 
@@ -197,7 +209,7 @@ Fecha: 10 Junio 2026
 
 ---
 
-### 🛡️ Día 9: Arquitectura Defensiva (`try/except/else/finally`) y Sistemas de Logging
+###  Día 9: Arquitectura Defensiva (`try/except/else/finally`) y Sistemas de Logging
 **Archivo:** `dia9.py` | **Logs:** `log.txt`  
 **Fecha:** 1 Junio 2026
 
@@ -214,7 +226,7 @@ Fecha: 10 Junio 2026
 
 ---
 ```
-## 📈 Progreso Actual: Día 8/180 ✅
+##  Progreso Actual: Día 8/180 ✅
 
 
 ### ⚡ Día 8: Iteradores y Generadores (`yield`) - Optimización de Memoria
@@ -246,7 +258,7 @@ Generador: 208 bytes. Misma info, RAM constante 0(1)
 ```
 ---
 
-## 📈 Progreso Actual: Día 7/180 ✅
+##  Progreso Actual: Día 7/180 ✅
 
 ### 🛠️ Día 7: Decoradores (`@`) - Closures y Envolturas Estructurales
 **Archivo:** `dia7.py`  
@@ -262,9 +274,9 @@ Generador: 208 bytes. Misma info, RAM constante 0(1)
 
 ---
 
-### 📈 Progreso Actual: Día 6/180 ✅
+### Progreso Actual: Día 6/180 ✅
 
-### 🛠️ Día 6: Operadores *args y \*\*kwargs`
+### Día 6: Operadores *args y \*\*kwargs`
 **Archivo:** `dia6.py`
 
 **Qué aprendi hoy:**
