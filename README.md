@@ -76,6 +76,21 @@ Plan intensivo de 180 días enfocado en buenas prácticas, arquitectura limpia y
 
 ---
 
+## 🚀 Día 20.5: Introducción a la Programación Orientada a Objetos (POO)
+Hoy di el gran salto de la programación estructurada al paradigma de **POO**, aprendiendo a empaquetar datos y lógica dentro de estructuras reutilizables (moldes).
+
+### 🧠 Conceptos Clave Dominados:
+* **Clases y Objetos:** Entendí que la `Clase` es el plano de diseño (el molde) y el `Objeto` es la instancia real que vive en la memoria RAM con datos específicos.
+* **Abstracción:** Pasé de pensar en un negocio local a diseñar una clase global y técnica llamada `Producto`, capaz de adaptarse a cualquier sistema de inventario o e-commerce.
+* **Método Constructor (`__init__`):** La función interna que inicializa los atributos del objeto usando la palabra clave `self`.
+* **Método Mágico (`__str__`):** Implementación para formatear y presentar los datos del objeto de manera limpia y legible en la terminal para los humanos.
+
+### 🛠️ Errores Superados en la Sesión (Debugging):
+1. **NameError por Sintaxis de Archivos:** Aprendí que usar puntos en el nombre de un archivo (`mi.primera.clase.py`) confunde al intérprete de Python con la navegación de módulos. Se corrigió a `mi_primera_clase.py`.
+2. **IndentationError en Flujo Principal:** Corregí la sangría del flujo de ejecución del programa, entendiendo que las instancias y los `print()` deben ir alineados a la extrema izquierda (Columna 1) para ejecutarse fuera del molde de la clase.
+
+---
+
 ##  Día 20: CRUD Completo y Control de Errores (Puesto de Empanadas)
 En esta sesión expandí el sistema del puesto de empanadas, completando las operaciones del **CRUD** en memoria RAM y enfrentando desafíos técnicos reales del backend.
 
