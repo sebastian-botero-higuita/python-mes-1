@@ -91,6 +91,20 @@ Hoy di el gran salto de la programación estructurada al paradigma de **POO**, a
 
 ---
 
+## 💾 Día 21: Persistencia de Objetos con JSON y Arquitectura Defensiva
+Hoy implementé un sistema completo de persistencia de datos, logrando que los objetos de Python dejen de ser volátiles (efímeros en RAM) y pasen a almacenarse de forma permanente en el disco duro en formato **JSON**.
+
+### 🧠 Conceptos Avanzados Dominados:
+* **Serialización (Escritura):** Extracción de los atributos de un objeto mediante un método personalizado `to_dict()` para transformarlo en un diccionario apto para `json.dump()`.
+* **Deserialización (Lectura y Reconstrucción):** Recuperación de datos planos desde un archivo `.json` usando `json.load()` y reconstrucción de las instancias del molde `Producto` mediante un ciclo para devolverles sus métodos y lógica interna en memoria.
+* **Manejo de Excepciones de Entrada/Salida (I/O):** Implementación de bloques `try/except` para capturar errores críticos del sistema operativo, tales como `IOError`, `FileNotFoundError` y `json.JSONDecodeError` (archivos corruptos), garantizando la tolerancia a fallos del backend.
+
+### 🛠️ Correcciones de Calidad Aplicadas (Code Review):
+1. **Blindaje de Escritura:** Envoltura del administrador de contexto `with open` dentro de un bloque de control de excepciones para evitar caídas del servidor en entornos de producción.
+2. **Sincronización de Rutas y Tipos:** Corrección de mensajes informativos para asegurar consistencia con el archivo físico real (`inventarios.json` en plural) y depuración de errores tipográficos en los strings de excepción.
+
+---
+
 ##  Día 20: CRUD Completo y Control de Errores (Puesto de Empanadas)
 En esta sesión expandí el sistema del puesto de empanadas, completando las operaciones del **CRUD** en memoria RAM y enfrentando desafíos técnicos reales del backend.
 
