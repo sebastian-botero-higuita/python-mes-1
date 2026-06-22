@@ -76,18 +76,18 @@ Plan intensivo de 180 días enfocado en buenas prácticas, arquitectura limpia y
 
 ---
 
-## 🚀 Día 20.5: Introducción a la Programación Orientada a Objetos (POO)
-Hoy di el gran salto de la programación estructurada al paradigma de **POO**, aprendiendo a empaquetar datos y lógica dentro de estructuras reutilizables (moldes).
+---
 
-### 🧠 Conceptos Clave Dominados:
-* **Clases y Objetos:** Entendí que la `Clase` es el plano de diseño (el molde) y el `Objeto` es la instancia real que vive en la memoria RAM con datos específicos.
-* **Abstracción:** Pasé de pensar en un negocio local a diseñar una clase global y técnica llamada `Producto`, capaz de adaptarse a cualquier sistema de inventario o e-commerce.
-* **Método Constructor (`__init__`):** La función interna que inicializa los atributos del objeto usando la palabra clave `self`.
-* **Método Mágico (`__str__`):** Implementación para formatear y presentar los datos del objeto de manera limpia y legible en la terminal para los humanos.
+## 📊 Día 22: Arquitectura Modular e Interfaz de Control (Event Loop)
+Hoy di el salto de scripts planos a una aplicación interactiva controlada por el usuario mediante la terminal, aplicando principios de diseño limpio y tolerancia a fallos.
 
-### 🛠️ Errores Superados en la Sesión (Debugging):
-1. **NameError por Sintaxis de Archivos:** Aprendí que usar puntos en el nombre de un archivo (`mi.primera.clase.py`) confunde al intérprete de Python con la navegación de módulos. Se corrigió a `mi_primera_clase.py`.
-2. **IndentationError en Flujo Principal:** Corregí la sangría del flujo de ejecución del programa, entendiendo que las instancias y los `print()` deben ir alineados a la extrema izquierda (Columna 1) para ejecutarse fuera del molde de la clase.
+### 🧠 Conceptos Avanzados Dominados:
+* **Loop de Eventos (Event Loop):** Implementación de un ciclo continuo controlado (`while True`) para mantener los servicios del backend escuchando peticiones dinámicas del usuario sin interrupciones del sistema.
+* **Modularización y Responsabilidad Única:** Desacoplamiento de la lógica del menú principal, abstrayendo cada opción en funciones independientes (`agregar_producto`, `ver_inventario`, `guardar_y_salir`). Esta arquitectura simula la estructura de endpoints que se utiliza en frameworks empresariales como FastAPI.
+* **Validación Defensiva Crítica:** Implementación de bloques de control de tipos (`try/except ValueError`) para interceptar datos corruptos o caracteres no numéricos en entradas del teclado, previniendo caídas catastróficas del hilo de ejecución.
+
+### 🛠️ Depuración Aplicada (Debugging):
+* **Control de Espacio de Nombres Locales:** Corrección de errores de sintaxis en el manejo de funciones nativas (`print`), asegurando que no existan interferencias léxicas en los bloques de captura de excepciones de Entrada/Salida.
 
 ---
 
@@ -102,6 +102,22 @@ Hoy implementé un sistema completo de persistencia de datos, logrando que los o
 ### 🛠️ Correcciones de Calidad Aplicadas (Code Review):
 1. **Blindaje de Escritura:** Envoltura del administrador de contexto `with open` dentro de un bloque de control de excepciones para evitar caídas del servidor en entornos de producción.
 2. **Sincronización de Rutas y Tipos:** Corrección de mensajes informativos para asegurar consistencia con el archivo físico real (`inventarios.json` en plural) y depuración de errores tipográficos en los strings de excepción.
+
+---
+
+## 🚀 Día 20.5: Introducción a la Programación Orientada a Objetos (POO)
+Hoy di el gran salto de la programación estructurada al paradigma de **POO**, aprendiendo a empaquetar datos y lógica dentro de estructuras reutilizables (moldes).
+
+### 🧠 Conceptos Clave Dominados:
+* **Clases y Objetos:** Entendí que la `Clase` es el plano de diseño (el molde) y el `Objeto` es la instancia real que vive en la memoria RAM con datos específicos.
+* **Abstracción:** Pasé de pensar en un negocio local a diseñar una clase global y técnica llamada `Producto`, capaz de adaptarse a cualquier sistema de inventario o e-commerce.
+* **Método Constructor (`__init__`):** La función interna que inicializa los atributos del objeto usando la palabra clave `self`.
+* **Método Mágico (`__str__`):** Implementación para formatear y presentar los datos del objeto de manera limpia y legible en la terminal para los humanos.
+
+### 🛠️ Errores Superados en la Sesión (Debugging):
+1. **NameError por Sintaxis de Archivos:** Aprendí que usar puntos en el nombre de un archivo (`mi.primera.clase.py`) confunde al intérprete de Python con la navegación de módulos. Se corrigió a `mi_primera_clase.py`.
+2. **IndentationError en Flujo Principal:** Corregí la sangría del flujo de ejecución del programa, entendiendo que las instancias y los `print()` deben ir alineados a la extrema izquierda (Columna 1) para ejecutarse fuera del molde de la clase.
+
 
 ---
 
