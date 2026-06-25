@@ -78,6 +78,16 @@ Plan intensivo de 180 días enfocado en buenas prácticas, arquitectura limpia y
 
 ---
 
+## 💾 Día 23: Persistencia Inversa y Configuración Centralizada (Bootstrap)
+Hoy completé el ciclo de vida de los datos del sistema de inventario, logrando que la aplicación tenga un estado persistente real al arrancar, gobernado por buenas prácticas de arquitectura limpia.
+
+### 🧠 Conceptos Profesionales Dominados:
+* **Bootstrap / Hidratación de Memoria:** Implementación de la función automática `cargar_inventario()` al iniciar el hilo de ejecución, permitiendo transferir el estado físico del disco duro (JSON) a instancias vivas dentro de la memoria RAM.
+* **Variables de Configuración Centralizadas (Constantes):** Sustitución de cadenas de texto explícitas (*hardcoding*) por la constante global `NOMBRE_ARCHIVO`. Esto desacopla el nombre del archivo de la lógica interna de las funciones, emulando el comportamiento de los archivos de entorno `.env` en FastAPI.
+* **Control de Excepciones del Sistema Operativo:** Blindaje defensivo usando un manejo multifactor de errores (`FileNotFoundError` y `JSONDecodeError`) para asegurar que si el archivo de persistencia no existe o es alterado externamente, el sistema se recupere en limpio sin colapsar.
+
+---
+
 ## 📊 Día 22: Arquitectura Modular e Interfaz de Control (Event Loop)
 Hoy di el salto de scripts planos a una aplicación interactiva controlada por el usuario mediante la terminal, aplicando principios de diseño limpio y tolerancia a fallos.
 
