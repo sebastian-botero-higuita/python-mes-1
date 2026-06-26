@@ -76,6 +76,14 @@ Plan intensivo de 180 días enfocado en buenas prácticas, arquitectura limpia y
 
 ---
 
+## 🧬 Día 24: Programación Orientada a Objetos Avanzada (Herencia y super())
+Hoy evolucioné la arquitectura del sistema de inventario implementando herencia de clases y polimorfismo para manejar subtipos de datos de negocio complejos sin duplicar lógica en memoria.
+
+### 🧠 Conceptos Avanzados Dominados:
+* **Herencia Simple (Clase Base e Hija):** Creación de la subclase `ProductoPerecedero` que extiende las propiedades de la clase base `Producto`, reutilizando lógica estructural y métodos de cálculo dinámicos como `calcular_subtotal()`.
+* **Inyección y Acoplamiento Limpio con `super()`:** Uso de la función `super()` para invocar el constructor (`__init__`) y los métodos serializadores (`to_dict`) de la clase padre. Esto garantiza la integridad de los datos heredados mientras se añaden atributos locales específicos como `mes_vencimiento`.
+* **Validación Regida por Modelos (Cláusulas de Guarda):** Implementación de listas de control estrictas (`MESES_VALIDOS`) combinadas con la excepción `raise ValueError` directamente en el constructor del objeto, forzando un diseño de software donde es físicamente imposible instanciar objetos con datos corruptos.
+
 ---
 
 ## 💾 Día 23: Persistencia Inversa y Configuración Centralizada (Bootstrap)
