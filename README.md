@@ -76,6 +76,16 @@ Plan intensivo de 180 días enfocado en buenas prácticas, arquitectura limpia y
 
 ---
 
+## 🧬 Día 25: Herencia Múltiple y Method Resolution Order (MRO) Avanzado
+Hoy culminé el bloque de POO Avanzada implementando un modelo híbrido capaz de heredar comportamientos y atributos de múltiples clases padres en paralelo, solucionando los conflictos de acoplamiento estructural.
+
+### 🧠 Conceptos Avanzados Dominados:
+* **Herencia Múltiple Extensible:** Creación de la clase híbrida `ProductoImportadoPerecedero`, uniendo los requerimientos de negocio de aranceles aduaneros (`ProductoImportado`) y de fechas de caducidad (`ProductoPerecedero`).
+* **Desempaquetado Dinámico con `**kwargs`:** Uso del patrón de empaquetado de argumentos por palabra clave para permitir que los datos viajen de forma segura a través de la cadena jerárquica, evitando errores de tipo (`TypeError`) y garantizando que cada constructor intermedio tome solo lo que necesita.
+* **Diagnóstico del MRO (Method Resolution Order):** Inspección programática del orden de resolución de métodos usando el atributo `__mro__` para trazar el flujo exacto que Python diseña para la delegación de métodos con `super()`.
+
+---
+
 ## 🧬 Día 24: Programación Orientada a Objetos Avanzada (Herencia y super())
 Hoy evolucioné la arquitectura del sistema de inventario implementando herencia de clases y polimorfismo para manejar subtipos de datos de negocio complejos sin duplicar lógica en memoria.
 
