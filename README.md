@@ -76,6 +76,51 @@ Plan intensivo de 180 días enfocado en buenas prácticas, arquitectura limpia y
 
 ---
 
+## Día 26 — Proyecto Sistema de Empleados
+
+### ¿Qué construí?
+Sistema de gestión de empleados con dos tipos: planta y contratistas.
+
+### Conceptos aplicados
+- Herencia con super()
+- Polimorfismo en calcular_pago()
+- Persistencia JSON (guardar y cargar)
+- Validaciones con ValueError
+
+### Bugs que resolví hoy
+- NameError por nombre de clase inconsistente
+- SyntaxError por return fuera de función
+- ValueError por salario 0 en contratistas
+- Funciones dentro de clase en vez de fuera
+
+### Lección más importante
+La indentación en Python es estructura, no decoración.
+
+### Output real de la terminal
+--- SISTEMA DE EMPLEADOS ---
+
+ EMPLEADOS REGISTRADOS:
+Carlos Pérez | Departamento: Sistemas | Salario: $3500000
+   Pago: $3500000
+Ana Gómez | Departamento: Contabilidad | Salario: $4200000
+   Pago: $4200000
+Luis Torres | Departamento: Proyectos | Salario: $0 | Horas: 120 | Pago: $5400000
+   Pago: $5400000
+Mario Ríos | Departamento: Diseño | Salario: $0 | Horas: 80 | Pago: $5200000
+   Pago: $5200000
+
+
+ Empleados guardados exitosamente.
+
+ EMPLEADOS RECARGADOS DESDE DISCO:
+ Se cargaron 4 empleados desde el disco.
+Carlos Pérez | Departamento: Sistemas | Salario: $3500000
+Ana Gómez | Departamento: Contabilidad | Salario: $4200000
+Luis Torres | Departamento: Proyectos | Salario: $0 | Horas: 120 | Pago: $5400000
+Mario Ríos | Departamento: Diseño | Salario: $0 | Horas: 80 | Pago: $5200000
+
+---
+
 ## 🧬 Día 25: Herencia Múltiple y Method Resolution Order (MRO) Avanzado
 Hoy culminé el bloque de POO Avanzada implementando un modelo híbrido capaz de heredar comportamientos y atributos de múltiples clases padres en paralelo, solucionando los conflictos de acoplamiento estructural.
 
