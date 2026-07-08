@@ -76,6 +76,16 @@ Plan intensivo de 180 días enfocado en buenas prácticas, arquitectura limpia y
 
 ---
 
+##  Día 27: Fundamentos de Testing Automatizado con Pytest y `assert`
+Hoy inicié el bloque de Aseguramiento de Calidad (QA) migrando de la verificación manual de software a la automatización de pruebas unitarias usando Pytest como estándar de la industria.
+
+### 🧠 Conceptos Aprendidos:
+* **Estructura de Descubrimiento:** Implementación de la convención de nomenclatura `test_*.py` para permitir que el framework localice y ejecute suites de prueba de forma autónoma.
+* **Mecanismo de Afirmación (`assert`):** Uso de la palabra clave nativa para inyectar expectativas matemáticas en las funciones, forzando la generación de `AssertionError` controlados en caso de discrepancias.
+* **Ciclo de Corrección de Pruebas:** Interpretación de reportes de fallas en consola para trazar regresiones y corregir valores esperados hasta lograr un estado de éxito (`passed`).
+
+---
+
 ## Día 26 — Proyecto Sistema de Empleados
 
 ### ¿Qué construí?
