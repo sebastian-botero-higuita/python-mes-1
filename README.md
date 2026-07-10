@@ -76,6 +76,16 @@ Plan intensivo de 180 días enfocado en buenas prácticas, arquitectura limpia y
 
 ---
 
+## 🛡️ Día 28: Pruebas de Excepciones con `pytest.raises` y Cobertura de Caminos
+Hoy robustecí la suite de pruebas unitarias implementando aserciones defensivas para validar el comportamiento del software ante datos corruptos.
+
+### 🧠 Conceptos Aprendidos:
+* **Infección y Captura de Errores:** Uso del gestor de contexto `with pytest.raises(ValueError)` para interceptar excepciones esperadas y evitar el colapso de la suite de pruebas.
+* **Cobertura de Caminos (Branch Coverage):** Diseño de escenarios de prueba para cubrir todas las bifurcaciones lógicas de un condicional con operadores compuestos (`or`).
+* **Precisión de Contratos:** Validación exacta de mensajes de error (`AssertionError` por discrepancia de caracteres), entendiendo el impacto de la consistencia de strings en entornos de producción.
+
+---
+
 ##  Día 27: Fundamentos de Testing Automatizado con Pytest y `assert`
 Hoy inicié el bloque de Aseguramiento de Calidad (QA) migrando de la verificación manual de software a la automatización de pruebas unitarias usando Pytest como estándar de la industria.
 
