@@ -76,6 +76,18 @@ Plan intensivo de 180 días enfocado en buenas prácticas, arquitectura limpia y
 
 ---
 
+## ⚙️ Día 28: Moldes Reutilizables con Pytest Fixtures y Pruebas Defensivas
+
+Hoy elevé la calidad de la suite de pruebas unitarias implementando **Fixtures (Accesorios)** en Pytest para optimizar la creación de datos de prueba y asegurar la modularidad del código bajo el principio **DRY** (*Don't Repeat Yourself*).
+
+### 🧠 Conceptos Aprendidos:
+* **Fixtures como Moldes Reutilizables:** Uso del decorador `@pytest.fixture` para preconfigurar escenarios y estados de objetos limpios, centralizando la instanciación y facilitando el mantenimiento futuro del software.
+* **Inyección de Dependencias Automatizada:** Comprensión de cómo Pytest mapea e inyecta dinámicamente los objetos de prueba simplemente pasando el nombre de la fixture como argumento en las funciones de test.
+* **Diversificación de Escenarios:** Creación de múltiples fixtures especializadas (`empleado_plantilla` y `empleado_sin_bonificacion`) para testear caminos felices y casos borde de forma aislada.
+* **Refactorización de Inicialización Lógica:** Corrección del orden en el método `__init__` para asignar primero las propiedades al estado del objeto antes de ejecutar los escudos de validación interna.
+
+---
+
 ## 🛡️ Día 28: Pruebas de Excepciones con `pytest.raises` y Cobertura de Caminos
 Hoy robustecí la suite de pruebas unitarias implementando aserciones defensivas para validar el comportamiento del software ante datos corruptos.
 
