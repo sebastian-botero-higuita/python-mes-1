@@ -76,7 +76,18 @@ Plan intensivo de 180 días enfocado en buenas prácticas, arquitectura limpia y
 
 ---
 
-## ⚙️ Día 28: Moldes Reutilizables con Pytest Fixtures y Pruebas Defensivas
+## 📊 Día 30: Pruebas Parametrizadas con Pytest
+
+Hoy optimicé la suite de pruebas automatizadas implementando **Pruebas Parametrizadas** mediante el decorador `@pytest.mark.parametrize`. Esto permite ejecutar múltiples escenarios de prueba usando una única estructura de código.
+
+### 🧠 Conceptos Clave:
+* **Tablas de Datos de Prueba:** Definición de tuplas con entradas de datos reales y salidas esperadas directamente sobre el decorador, evitando la duplicación de funciones de test (Principio DRY).
+* **Combinación con Escudos de Excepciones:** Integración de `@pytest.mark.parametrize` con `with pytest.raises` para testear múltiples entradas corruptas (salarios y porcentajes negativos o fuera de rango) bajo una sola función validadora.
+* **Escalabilidad del Test:** Capacidad de expandir la cobertura de pruebas de 4 a 9 escenarios simplemente agregando filas a la tabla de datos, garantizando la robustez del módulo `calculos.py`.
+
+---
+
+## ⚙️ Día 29: Moldes Reutilizables con Pytest Fixtures y Pruebas Defensivas
 
 Hoy elevé la calidad de la suite de pruebas unitarias implementando **Fixtures (Accesorios)** en Pytest para optimizar la creación de datos de prueba y asegurar la modularidad del código bajo el principio **DRY** (*Don't Repeat Yourself*).
 
