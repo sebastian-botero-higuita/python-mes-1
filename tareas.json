@@ -1,7 +1,27 @@
 [
     {
-        "texto": "Probar que si guarda",
+        "texto": "Estudiar Python",
         "completada": false,
         "prioridad": "1"
+    },
+    {
+        "texto": "Dormir mas tarde",
+        "completada": true,
+        "prioridad": "2"
+    },
+    {
+        "texto": "Estudiar y aprender ingles",
+        "completada": false,
+        "prioridad": "media"
+    },
+    {
+        "texto": "Lavar mi carro",
+        "completada": false,
+        "prioridad": "media"
+    },
+    {
+        "texto": "Ser uno de los mejores desarrolladores",
+        "completada": false,
+        "prioridad": "media"
     }
 ]

@@ -1,12 +1,12 @@
 [
     {
-        "nombre": "Empanada de carne",
-        "precio": 3000,
-        "cantidad": 10
+        "nombre": "Tennis",
+        "precio": 450000,
+        "cantidad": 12
     },
     {
-        "nombre": "Gaseosa 1.5L",
-        "precio": 4500,
-        "cantidad": 4
+        "nombre": "Jeans",
+        "precio": 100000,
+        "cantidad": 34
     }
 ]

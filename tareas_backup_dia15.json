@@ -1,0 +1,12 @@
+[
+    {
+        "texto": "estudiar",
+        "completada": false,
+        "prioridad": "2"
+    },
+    {
+        "texto": "lavar platos",
+        "completada": false,
+        "prioridad": "2"
+    }
+]

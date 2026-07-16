@@ -1,0 +1,30 @@
+[
+    {
+        "nombre": "Carlos Pérez",
+        "salario": 3500000,
+        "departamento": "Sistemas",
+        "tipo": "planta"
+    },
+    {
+        "nombre": "Ana Gómez",
+        "salario": 4200000,
+        "departamento": "Contabilidad",
+        "tipo": "planta"
+    },
+    {
+        "nombre": "Luis Torres",
+        "salario": 0,
+        "departamento": "Proyectos",
+        "tipo": "contratista",
+        "horas_trabajadas": 120,
+        "valor_hora": 45000
+    },
+    {
+        "nombre": "Mario Ríos",
+        "salario": 0,
+        "departamento": "Diseño",
+        "tipo": "contratista",
+        "horas_trabajadas": 80,
+        "valor_hora": 65000
+    }
+]
