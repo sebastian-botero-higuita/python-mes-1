@@ -1,78 +1,65 @@
-# 🐍 Python 180 Días - De Cero a Mid Backend v3.0 BLINDADO
-Plan intensivo de 180 días enfocado en buenas prácticas, arquitectura limpia y código de producción listo para el mercado laboral.
+# 🐍 Python 180 Días - De Cero a Mid Backend v3.2 BLINDADO & ADAPTATIVO
 
-**Stack Objetivo:** Python 3 + FastAPI + PostgreSQL + Docker + Pytest + Git
+Plan intensivo de 180 días de contenido enfocado en buenas prácticas, arquitectura limpia, estándares de producción e integración con tecnologías modernas de 2026.
 
----
-
-## 🗺️ PLAN 180 DÍAS v3.0 BLINDADO
-**Meta:** Ofertas laborales antes del 25 Noviembre 2026  
-**Filosofía:** Código de producción > tutoriales. Cada día = commit + README + test real
-
-### FASE 1: FUNDAMENTOS BLINDADOS DÍA 1-30
-**Objetivo:** Base inquebrantable. Si fallas aquí, todo el backend se cae.
-
-| Día | Tema | Blindaje Auditor | Entregable GitHub |
-| :--- | :--- | :--- | :--- |
-| 1-3 | Variables, tipos, input/output | Validación de tipos + manejo de `ValueError` | `dia1-3.py` con tests |
-| 4-5 | Condicionales, loops | Lógica defensiva + `while True` con break seguro | Ejercicios con casos borde |
-| 6 | `*args, **kwargs` | Documentar cuándo usar vs listas/dicts | `dia6.py` + output terminal |
-| **7** | **Decoradores @** | **`@wraps` obligatorio + regla `return resultado`** | `dia7.py` blindado ✅ |
-| 8 | `yield` y Generadores | Manejo `StopIteration` + memoria vs listas | Consumo de archivos grandes |
-| 9-10 | Manejo de Errores | `try/except/else/finally` + excepciones custom | Sistema de logging básico |
-| 11-15 | Módulos + Paquetes | `__init__.py` + imports relativos vs absolutos | Proyecto modular |
-| 16-20 | POO Básico | Encapsulamiento + `@property` + `__str__` | Sistema de usuarios |
-| 21-25 | POO Avanzado | Herencia múltiple + MRO + `super()` | Sistema bancario |
-| 26-30 | Testing con Pytest | `assert` + fixtures + coverage >80% | `test_*.py` blindados |
-
-*Blindaje Fase 1: Todo código debe pasar linter + tener docstrings + 3 casos de prueba mínimo.*
-
-### FASE 2: BACKEND REAL DÍA 31-90
-**Objetivo:** Construir APIs que no se caigan en producción
-
-| Día | Tema | Blindaje Auditor | Entregable GitHub |
-| :--- | :--- | :--- | :--- |
-| 31-40 | FastAPI Fundamentos | Validación Pydantic + códigos HTTP correctos | API REST básica |
-| 41-50 | SQL + PostgreSQL | SQL Injection prevention + transacciones ACID | CRUD completo |
-| 51-60 | ORM SQLAlchemy | Migraciones Alembic + relaciones N:N | Base de datos real |
-| 61-70 | Autenticación JWT | Hash bcrypt + refresh tokens + roles | Sistema login seguro |
-| 71-80 | Docker | `Dockerfile` multicapa + `.dockerignore` | Container deployable |
-| 81-90 | Deploy Cloud | Variables entorno + logs + health checks | API en Render/Railway |
-
-*Blindaje Fase 2: Cada API debe tener documentación interactiva + Postman collection + manejo de errores 400/500.*
-
-### FASE 3: ALGORITMOS + SYSTEM DESIGN DÍA 91-150
-**Objetivo:** Pasar entrevistas técnicas sin sudar
-
-| Día | Tema | Blindaje Auditor | Entregable GitHub |
-| :--- | :--- | :--- | :--- |
-| 91-110 | LeetCode Blind 75 | Complejidad O(n) documentada + casos borde | 30 problemas resueltos |
-| 111-130 | Estructuras de Datos | Implementar desde cero: HashMap, Árbol, Grafo | Librería propia |
-| 131-150 | System Design | Diseño escalable + cuellos de botella + caching | 3 diseños documentados |
-
-*Blindaje Fase 3: Cada solución incluye: diagrama + complejidad + trade-offs.*
-
-### FASE 4: PROYECTO CAPSTONE + EMPLEO DÍA 151-180
-**Objetivo:** Portafolio que vende + CV que pasa ATS
-
-| Día | Tema | Blindaje Auditor | Entregable GitHub |
-| :--- | :--- | :--- | :--- |
-| 151-165 | Proyecto Fintech/AI | Arquitectura hexagonal + tests + CI/CD | Repo estrella ⭐ |
-| 166-170 | LinkedIn + CV | Keywords ATS + métricas cuantificables | Perfil optimizado |
-| 171-175 | Entrevistas Mock | STAR method + preguntas sistema | 5 simulacros grabados |
-| 176-180 | Aplicar + Negociar | 5 a 10 aplicaciones de alto impacto/día + follow up | Primera oferta |
-
-*Blindaje Fase 4: Proyecto con README que incluye: problema, solución, arquitectura, demo video.*
+**Stack Objetivo:** Python 3 + FastAPI (Async) + PostgreSQL + SQLAlchemy + Docker + GitHub Actions (CI/CD) + Redis + Pytest + AI APIs
 
 ---
 
-### 🔑 REGLAS DE ORO BLINDADAS (Aplica todos los días)
-* **Git:** Commit diario con mensaje descriptivo. Nada de "update".
-* **README:** Cada día documentado con qué aprendiste + output real de consola.
-* **Testing:** Si no hay test, no existe el código (Fase 1 corporativa).
-* **Debugging:** Todo error crítico se documenta. El aprendizaje del wrapper es ley.
-* **Código Limpio:** Formateo y orden estructural antes de cada push.
-* **Producción:** Pregúntate siempre "¿Esto aguantaría 10k usuarios concurrentes?".
+## 🗺️ ESTRATEGIA Y CONTROL DE AVANCE v3.2
+
+* **Gatillo de Búsqueda Laboral:** **Hito de Contenido (Fin de Fase 2 / Día 90)**. Las aplicaciones a vacantes se activan inmediatamente al completar el bloque de FastAPI + Async SQL + ORM + JWT + Docker + CI/CD + Deploy, independientemente de la fecha en el calendario.
+* **Métrica de Control:** Recalibración periódica del ritmo real cada 30 días de avance en el plan para proyectar el calendario de forma realista según tu disponibilidad real de tiempo.
+* **Filosofía de Trabajo:** Calidad de código de producción > velocidad de lectura. El proceso de *debugging* profundo y la asimilación de conceptos priman sobre carreras contra el reloj.
+
+---
+
+### FASE 1: FUNDAMENTOS BLINDADOS (DÍAS 1-30) — *COMPLETADA* ✅
+
+* **Días 1-10:** Sintaxis defensiva, `*args/**kwargs`, decoradores (`@wraps`), generadores (`yield`) y manejo estricto de excepciones.
+* **Días 11-25:** Módulos, paquetes, Programación Orientada a Objetos (POO) avanzada, herencia múltiple, MRO y `super()`.
+* **Días 26-30:** Testing profesional con Pytest (fixtures, mocks, cobertura >80%).
+
+---
+
+### FASE 2: BACKEND REAL & ARQUITECTURA (DÍAS 31-90) — *EN EJECUCIÓN* 🎯
+
+| Días | Tema Principal | Blindaje Técnico / Ajustes v3.2 | Entregable GitHub |
+| --- | --- | --- | --- |
+| **31-40** | **FastAPI Fundamentos & Refactor** | Validación Pydantic v2, DTOs, códigos HTTP, excepciones y **Estructura Modular (`APIRouter`)**. | API REST modularizada con CRUD completo. |
+| **41-50** | **SQL & PostgreSQL (Async)** | Prevención de SQL Injection, transacciones ACID y **Manejo Asíncrono (`async/await`)**. | Scripts de BD y consultas optimizadas. |
+| **51-60** | **ORM SQLAlchemy + Alembic** | Modelos relacionales (1:N, N:N), migraciones automáticas con Alembic y **`AsyncSession`**. | Persistencia real en base de datos. |
+| **61-70** | **Autenticación & Seguridad** | Hashing con bcrypt, tokens JWT con Refresh Tokens, control de accesos por roles (RBAC). | Sistema de Login / Auth seguro. |
+| **71-80** | **Docker & CI/CD** | `Dockerfile` multicapa, `.dockerignore` y **Pipeline CI/CD con GitHub Actions**. | Contenedor listo + CI/CD automatizado. |
+| **81-90** | **Caching & Deploy Cloud** | **Integración con Redis (Rate Limiting y Blacklist JWT)** + Deploy en Render/Railway. | API en producción + **Punto de activación de empleos 🚀**. |
+
+---
+
+### FASE 3: ALGORITMOS, SYSTEM DESIGN & TRACK DE EMPLEO (DÍAS 91-150)
+
+| Días | Tema Principal | Blindaje Técnico / Ajustes v3.2 | Entregable GitHub |
+| --- | --- | --- | --- |
+| **91-110** | **LeetCode + Búsqueda Activa** | Patrones de algoritmos (Blind 75), optimización de CV/LinkedIn para ATS e **Inicio de Postulaciones (5-10/día)**. | 30 ejercicios resueltos + Perfil optimizado + Tracking sheet. |
+| **111-130** | **Estructuras de Datos & Entrevistas** | Implementación de HashMaps, Árboles, Grafos + Simulacros de entrevistas técnicas (método STAR). | Librería propia + Postulaciones activas. |
+| **131-150** | **System Design & Caching** | Escalabilidad horizontal, invalidación de caché en Redis, balanceadores y colas de mensajes. | 3 arquitecturas diseñadas + Entrevistas en proceso. |
+
+---
+
+### FASE 4: CAPSTONE AVANZADO CON IA & NEGOCIACIÓN (DÍAS 151-180)
+
+| Días | Tema Principal | Blindaje Técnico / Ajustes v3.2 | Entregable GitHub |
+| --- | --- | --- | --- |
+| **151-165** | **Proyecto Capstone Fintech / AI** | Arquitectura Limpia/Hexagonal + Integración con APIs de IA/LLMs (OpenAI/Anthropic SDKs, Streaming, Webhooks). | **Repo Estrella ⭐** desplegado en producción. |
+| **166-180** | **Simulacros Finales & Negociación** | Resolución de retos técnicos en vivo, evaluación de ofertas laborales y negociación salarial. | **Primera oferta firmada 🏁** |
+
+---
+
+### 🔑 REGLAS DE ORO & SEGUIMIENTO
+
+1. **Commit Diario:** Mensajes explicativos siguiendo estándar *Conventional Commits*.
+2. **Bitácora README:** Documentación técnica diaria con capturas y outputs reales de consola/Swagger UI.
+3. **Recalibración Trimestral/Mensual:** Cada 30 días de avance en el plan, recalculamos la proyección del calendario según los días reales consumidos.
+4. **Criterio de Calidad:** Un bug analizado y solucionado desde la raíz vale más que avanzar 5 lecciones de prisa.
 
 ---
 
